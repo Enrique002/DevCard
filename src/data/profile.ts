@@ -1,3 +1,4 @@
+
 export interface SocialLink {
   platform: string;
   label: string;
@@ -9,7 +10,7 @@ export interface SkillCategory {
   category: string;
   skills: Array<{
     name: string;
-    level?: string; // e.g. "Avanzado", "Intermedio"
+    level?: string;
     icon?: string;
   }>;
 }
@@ -55,122 +56,198 @@ export interface DeveloperProfile {
 }
 
 export const defaultProfile: DeveloperProfile = {
-  name: "Alex Dev",
-  handle: "alexdev",
-  role: "Senior Frontend Engineer & UI Specialist",
-  bio: "Desarrollador enfocado en construir experiencias web accesibles, rápidas y con excelente dirección de arte. Apasionado por las herramientas de desarrollo, CLI, React y TypeScript.",
-  location: "Madrid, España (Remoto)",
-  avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=250",
-  email: "alex.dev@example.com",
-  statusText: "Construyendo interfaces web modernas",
+  name: "Enrique Navarrete-Amado Sánchez",
+  handle: "Enrique002",
+  role: "Desarrollador de Software | Java · Python · Web",
+  bio: "Desarrollador orientado al desarrollo de software y aplicaciones web. Experiencia práctica con Java, mantenimiento y mejora de aplicaciones, y desarrollo de pequeños proyectos con Spring Boot y Python. Actualmente ampliando mis conocimientos mediante proyectos personales, APIs, bases de datos y desarrollo web.",
+  location: "España · Disponible para trabajo remoto",
+  avatarUrl: undefined,
+  email: undefined,
+  statusText: "Desarrollando proyectos y ampliando mi portfolio",
+
   systemSpecs: {
-    os: "Arch Linux x86_64",
-    host: "ThinkPad X1 Carbon Gen 10",
-    kernel: "6.8.9-arch1-1",
-    uptime: "42 días, 13 horas",
-    shell: "zsh 5.9",
-    terminal: "DevCard v1.0.0",
+    os: "Windows 11 x86_64",
+    shell: "PowerShell",
+    terminal: "DevCard",
   },
+
   socialLinks: [
     {
       platform: "GitHub",
-      label: "github.com/alexdev",
-      url: "https://github.com",
-    },
-    {
-      platform: "LinkedIn",
-      label: "linkedin.com/in/alexdev",
-      url: "https://linkedin.com",
+      label: "github.com/Enrique002",
+      url: "https://github.com/Enrique002",
     },
     {
       platform: "Portfolio",
-      label: "alexdev.dev",
-      url: "https://github.com",
-    },
-    {
-      platform: "Twitter / X",
-      label: "@alexdev_ui",
-      url: "https://x.com",
+      label: "Mi portfolio",
+      url: "https://enrique002.github.io/Portfolio/",
     },
   ],
+
   skillCategories: [
     {
-      category: "Frontend Core",
+      category: "Desarrollo Backend",
       skills: [
-        { name: "TypeScript", level: "Avanzado" },
-        { name: "React 19", level: "Avanzado" },
-        { name: "Next.js", level: "Intermedio-Alto" },
-        { name: "Tailwind CSS", level: "Avanzado" },
-        { name: "HTML5 / CSS3 Semántico", level: "Avanzado" },
+        {
+          name: "Java",
+          level: "Experiencia profesional",
+        },
+        {
+          name: "Programación orientada a objetos",
+          level: "Experiencia práctica",
+        },
+        {
+          name: "Spring Boot",
+          level: "Proyectos prácticos",
+        },
+        {
+          name: "APIs REST",
+          level: "Experiencia práctica",
+        },
+        {
+          name: "Python",
+          level: "Proyectos personales",
+        },
       ],
     },
     {
-      category: "Arquitectura & Calidad",
+      category: "Desarrollo Web",
       skills: [
-        { name: "Accesibilidad (WCAG 2.1)", level: "Avanzado" },
-        { name: "Vitest / Testing Library", level: "Avanzado" },
-        { name: "Design Systems", level: "Avanzado" },
-        { name: "Vite / Tooling", level: "Intermedio" },
+        {
+          name: "HTML5",
+          level: "Proyectos prácticos",
+        },
+        {
+          name: "CSS3",
+          level: "Proyectos prácticos",
+        },
+        {
+          name: "JavaScript",
+          level: "Desarrollo web",
+        },
+        {
+          name: "React",
+          level: "Proyectos prácticos",
+        },
+        {
+          name: "GitHub Pages",
+          level: "Despliegue de proyectos",
+        },
       ],
     },
     {
-      category: "Herramientas & Entorno",
+      category: "Bases de Datos y Herramientas",
       skills: [
-        { name: "Git / GitHub Actions", level: "Avanzado" },
-        { name: "Linux / Zsh", level: "Intermedio" },
-        { name: "Neovim / VS Code", level: "Avanzado" },
-        { name: "Figma", level: "Intermedio" },
+        {
+          name: "SQL",
+          level: "Experiencia práctica",
+        },
+        {
+          name: "Operaciones CRUD",
+          level: "Experiencia práctica",
+        },
+        {
+          name: "Git",
+          level: "Control de versiones",
+        },
+        {
+          name: "GitHub",
+          level: "Repositorios y colaboración",
+        },
+        {
+          name: "GitHub Actions",
+          level: "Automatización de despliegues",
+        },
+        {
+          name: "PowerShell",
+          level: "Entorno Windows",
+        },
       ],
     },
   ],
+
   projects: [
     {
-      id: "terminal-portfolio",
-      title: "DevCard - Terminal Card",
-      description: "Tarjeta interactiva para desarrolladores inspirada en la estética de terminal y neofetch. Altamente personalizable y accesible.",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      githubUrl: "https://github.com",
-      demoUrl: "https://github.com",
+      id: "portfolio",
+      title: "Portfolio Personal",
+      description:
+        "Portfolio web para presentar mi perfil profesional, mis conocimientos y mis proyectos de desarrollo. Publicado mediante GitHub Pages.",
+      tags: [
+        "React",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "GitHub Pages",
+      ],
+      githubUrl: "https://github.com/Enrique002/Portfolio",
+      demoUrl: "https://enrique002.github.io/Portfolio/",
       featured: true,
     },
     {
-      id: "ui-component-library",
-      title: "Pixel-CLI Component System",
-      description: "Biblioteca de componentes de interfaz inspirada en interfaces modo texto y editores de código con soporte de accesibilidad.",
-      tags: ["TypeScript", "Tailwind", "Radix Primitives"],
-      githubUrl: "https://github.com",
+      id: "devcard",
+      title: "DevCard",
+      description:
+        "Tarjeta de presentación interactiva para desarrolladores, con información personal, tecnologías, enlaces y proyectos. Diseñada para personalizarse y publicarse en GitHub Pages.",
+      tags: [
+        "TypeScript",
+        "React",
+        "Vite",
+        "GitHub Actions",
+      ],
       featured: true,
     },
     {
-      id: "git-commit-analyzer",
-      title: "CommitFlow Analyzer",
-      description: "Herramienta CLI para analizar la frecuencia de commits, hábitos de código y calidad de mensajes en repositorios Git.",
-      tags: ["Node.js", "CLI", "TypeScript"],
-      githubUrl: "https://github.com",
+      id: "port-manager",
+      title: "Gestor de Puertos",
+      description:
+        "Pequeña aplicación desarrollada con Java y Spring Boot para facilitar la identificación y el cierre de procesos que mantienen puertos ocupados en el equipo.",
+      tags: [
+        "Java",
+        "Spring Boot",
+        "APIs REST",
+        "Gestión de procesos",
+      ],
+      featured: true,
+    },
+    {
+      id: "python-automation",
+      title: "Scripts de Automatización",
+      description:
+        "Pequeños scripts en Python para automatizar tareas cotidianas en Windows, como la apertura de aplicaciones desde el escritorio.",
+      tags: [
+        "Python",
+        "Automatización",
+        "Windows",
+        "Scripting",
+      ],
       featured: false,
     },
   ],
+
   stats: [
     {
-      label: "Años de Experiencia",
-      value: "6+",
-      description: "Desarrollo frontend profesional",
+      label: "Lenguaje principal",
+      value: "Java",
+      description:
+        "Utilizado profesionalmente en mantenimiento y mejora de aplicaciones.",
     },
     {
-      label: "Proyectos Destacados",
-      value: "14",
-      description: "Aplicaciones web e iniciativas Open Source",
+      label: "Área de desarrollo",
+      value: "Full Stack",
+      description:
+        "Interés y práctica en backend, frontend y bases de datos.",
     },
     {
-      label: "Contribuciones (Demostración)",
-      value: "1,240+",
-      description: "Commits y PRs anuales (Dato de ejemplo)",
-      isExample: true,
+      label: "Proyectos personales",
+      value: "En desarrollo",
+      description:
+        "Aplicaciones y herramientas para seguir ampliando mi experiencia.",
     },
     {
-      label: "Puntuación Lighthouse",
-      value: "100%",
-      description: "Rendimiento y Accesibilidad",
+      label: "Despliegue",
+      value: "GitHub Pages",
+      description:
+        "Publicación de proyectos web y automatización con GitHub Actions.",
     },
   ],
 };
