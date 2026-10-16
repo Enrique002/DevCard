@@ -1,4 +1,6 @@
 
+import avatarImage from '../assets/avatar.jpg';
+
 export interface SocialLink {
   platform: string;
   label: string;
@@ -61,7 +63,7 @@ export const defaultProfile: DeveloperProfile = {
   role: "Desarrollador de Software | Java · Python · Web",
   bio: "Desarrollador orientado al desarrollo de software y aplicaciones web. Experiencia práctica con Java, mantenimiento y mejora de aplicaciones, y desarrollo de pequeños proyectos con Spring Boot y Python. Actualmente ampliando mis conocimientos mediante proyectos personales, APIs, bases de datos y desarrollo web.",
   location: "España · Disponible para trabajo remoto",
-  avatarUrl: undefined,
+  avatarUrl: avatarImage,
   email: undefined,
   statusText: "Desarrollando proyectos y ampliando mi portfolio",
 
