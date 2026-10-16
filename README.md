@@ -2,23 +2,7 @@
 
 **DevCard** es una tarjeta de presentación personalizable e interactiva para desarrolladores, diseñada con estética de terminal moderna y neofetch. Ofrece una experiencia visual cuidada, soporte para temas (oscuro/claro), terminal interactiva con ejecución de comandos y un único archivo de configuración para personalizar todo el perfil.
 
-![DevCard Preview](https://raw.githubusercontent.com/devcard/devcard/main/public/preview.png)
-
----
-
-## 🚀 Características Principales
-
-- 💻 **Estética de Terminal & Neofetch**: Ventana estilo CLI con controles decorativos, badge de versión y ficha técnica inspirada en herramientas del sistema.
-- 🐚 **Terminal Interactiva Integrada**: CLI en el navegador que acepta comandos reales (`help`, `about`, `skills`, `projects`, `stats`, `contact`, `theme`, `copy`, `clear`) con historial y botones de acceso rápido.
-- 🌓 **Tema Visual Persistente**: Alternancia entre tema oscuro (por defecto) y claro, guardando la preferencia en `localStorage` y respetando la preferencia de movimiento reducido (`prefers-reduced-motion`).
-- 📋 **Acción de Copiado al Portapapeles**: Copia un resumen estructurado del perfil con confirmación accesible y alternativa para navegadores restringidos.
-- 🛠️ **Configuración Centralizada**: Todos los datos del perfil (redes, proyectos, habilidades, datos del sistema) se gestionan desde un solo archivo (`src/data/profile.ts`).
-- 📱 **Diseño Totalmente Adaptable & Accesible**: Compatible con móviles, tablets y escritorios, navegación completa por teclado e indicadores de foco visibles.
-- ⚡ **Despliegue Automático en GitHub Pages**: Flujo de trabajo configurado con GitHub Actions y soporte para subdirectorios mediante rutas relativas (`base: './'`).
-
----
-
-## 🛠️ Tecnologías Elegidas y Justificación
+## Tecnologías Elegidas y Justificación
 
 - **React 19**: Proporciona una arquitectura declarativa ideal para gestionar el estado de la terminal interactiva, el historial de comandos y el cambio de tema visual sin complejidad innecesaria.
 - **Vite**: Empaquetador ultra rápido que facilita el desarrollo local, recarga rápida (HMR) y compilación optimizada con la configuración `base: './'` recomendada para GitHub Pages.
@@ -29,7 +13,7 @@
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```text
 devcard/
@@ -66,7 +50,7 @@ devcard/
 
 ---
 
-## ⚙️ Instalación y Ejecución Local
+## Instalación y Ejecución Local
 
 ### Requisitos previos
 - **Node.js**: v18 o superior
@@ -93,7 +77,7 @@ devcard/
 
 ---
 
-## ✏️ Cómo Personalizar tu Perfil
+## Cómo Personalizar tu Perfil
 
 Toda la información de la tarjeta está centralizada en el archivo:
 📁 **`src/data/profile.ts`**
@@ -119,7 +103,7 @@ Si se omite cualquier campo opcional (como `email` o `location`), la aplicación
 
 ---
 
-## 🧪 Ejecución de Pruebas Unitarias
+## Ejecución de Pruebas Unitarias
 
 El proyecto incluye un conjunto de pruebas automatizadas con Vitest:
 
@@ -133,22 +117,7 @@ npx vitest
 
 ---
 
-## 🌐 Publicación en GitHub Pages
-
-DevCard está preparado para desplegarse de forma gratuita en GitHub Pages mediante GitHub Actions.
-
-### Pasos para activar el despliegue automático:
-
-1. Sube tu proyecto a un repositorio de GitHub.
-2. Ve a los **Settings** (Ajustes) de tu repositorio en GitHub.
-3. En el menú lateral, selecciona **Pages**.
-4. En **Build and deployment** -> **Source**, selecciona **GitHub Actions**.
-5. Realiza un commit o push a la rama `main` (o `master`).
-6. El workflow `.github/workflows/deploy.yml` ejecutará las pruebas, construirá el proyecto y lo publicará automáticamente.
-
----
-
-## ⚠️ Limitaciones Conocidas
+## Limitaciones Conocidas
 
 - La terminal integrada es un simulador interactivo para la presentación del perfil y no ejecuta comandos reales del sistema operativo ni acceso a shells remotas.
 - Las cifras mostradas en las estadísticas son estáticas y configurables desde `src/data/profile.ts`. No requieren ni dependen de tokens privados de APIs externas.
