@@ -13,7 +13,7 @@
 
 ---
 
-## Estructura del Proyecto
+## Estructura del Proyecto 
 
 ```text
 devcard/
@@ -80,7 +80,7 @@ devcard/
 ## Cómo Personalizar tu Perfil
 
 Toda la información de la tarjeta está centralizada en el archivo:
-📁 **`src/data/profile.ts`**
+**`src/data/profile.ts`**
 
 Para adaptar la tarjeta a tu identidad:
 
