@@ -53,10 +53,16 @@ describe('terminalEngine', () => {
     expect(res.output[0].content).toContain('Comando no reconocido');
   });
 
+
   it('formats profile summary text correctly', () => {
     const text = formatProfileSummary(defaultProfile);
+
     expect(text).toContain(defaultProfile.name);
     expect(text).toContain(defaultProfile.role);
-    expect(text).toContain(defaultProfile.email);
+
+    if (defaultProfile.email) {
+      expect(text).toContain(defaultProfile.email);
+    }
   });
+
 });

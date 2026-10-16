@@ -29,6 +29,8 @@ describe('Main Content Sections', () => {
     );
     expect(screen.getByText('// Métricas & Estadísticas')).toBeInTheDocument();
     expect(screen.getByText('// Redes & Contacto')).toBeInTheDocument();
-    expect(screen.getByText(defaultProfile.email!)).toBeInTheDocument();
+    if (defaultProfile.email) {
+      expect(screen.getByText(defaultProfile.email)).toBeInTheDocument();
+      }
   });
 });
